@@ -6,7 +6,8 @@ Projeto de desenvolvimento front-end para construir uma aplicação que possui s
 
 Dependências:
 
-- 
+- Styled-components
+- Redux e React-redux
 
 
 ### :

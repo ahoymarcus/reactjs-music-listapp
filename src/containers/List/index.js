@@ -5,16 +5,19 @@ import { Item } from '../../components';
 
 
 
-export const List = ({ children }) => {
+export const List = ({ todoList, children }) => {
+	let counter = 0;
 	
 	
 	return (
 		<>
-			<ListSubTitle>{children}</ListSubTitle>
+			<ListSubTitle>
+				{children}
+			</ListSubTitle>
 			<UList>
-				<LI><Item item="Caderno">Item 1</Item></LI>
-				<LI><Item item="Borracha">Item 2</Item></LI>
-				<LI><Item item="Mochila">Item 3</Item></LI>
+				{todoList.map((id, name) => {
+					<LI key={id} ><Item item={name} >Item {counter++}</Item></LI>
+				})}
 			</UList>
 		</>
 	);
