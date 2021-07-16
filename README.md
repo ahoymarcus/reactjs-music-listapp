@@ -1,8 +1,7 @@
-# 
+# Como gerenciar o estado das aplicações com Redux
 
 
-Projeto de desenvolvimento front-end para a construção de um webapp ToDo list fazendo o gerenciamento do estado da aplicação utilizando Redux. [^1]
-
+Projeto de desenvolvimento front-end para construir uma aplicação que possui seu estado gerenciado pela biblioteca Redux JS. [^1]
 
 
 Dependências:
