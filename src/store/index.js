@@ -4,6 +4,5 @@ import reducers from './reducer';
 
 
 
-
-export dafault createStore(reducers);
+export default createStore(reducers);
 
