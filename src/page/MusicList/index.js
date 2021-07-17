@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
+import { connect } from 'react-redux';
+import { addTodo } from '../../store/actions/todo';
+
 import { Nav, Footer, Input, Button, Card } from '../../components';
 import { List } from '../../containers';
 
@@ -40,6 +43,14 @@ const ListTitle = styled.h1`
 `;
 
 
+/*CUIDADO para class components*/
+// const mapStateToProps = input => ({
+	// listTodo: input.todo
+// };)
 
+// export default connect(
+	// mapStateToProps, 
+	// { addTodo }
+// )(MusicList);
 
 

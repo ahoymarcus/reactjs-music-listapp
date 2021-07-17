@@ -4,7 +4,7 @@ export function addTodo(text) {
 		payload: {
 			id: Math.random(),
 			name: text
-		};
+		}
 	};
 };
 

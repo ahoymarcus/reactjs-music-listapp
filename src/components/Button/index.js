@@ -7,7 +7,7 @@ export const Button = ( {children, onClick} ) => {
 	
 	return (
 		<GenericButton 
-			class="generic-button" 
+			className="generic-button" 
 			onClick={onClick}
 		>
 			{children}
