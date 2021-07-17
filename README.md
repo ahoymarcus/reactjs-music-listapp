@@ -10,26 +10,9 @@ Dependências:
 - Redux e React-redux
 
 
-### :
-![imagem do ](./src/assets/serviço-google-find.png)
-
-
-
-### :
-![imagem do ](./src/assets/clone-do-serviço-google-find.png)
-
-
-### :
-![imagem do ](./src/assets/image-exemplo-do-uso-skeleton-no-preenchimento-dos-dados.png)
-
-
-### :
-![Exemplo do ](./src/assets/exemplo-do-uso-do-skeleton-no-carregamento-das-imagens.png)
-
-
 
 ### Resultado Final do projeto :
-![imagem final do projeto ](./src/assets/project-image.png)
+![imagem final do projeto](./src/assets/imagem-final-do-projeto.png)
 
 
 
