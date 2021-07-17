@@ -8,7 +8,7 @@ import { Item } from '../../components';
 
 
 export const List = ({ todoList, children }) => {
-	let counter = 0;
+	
 	
 	
 	return (
@@ -16,9 +16,10 @@ export const List = ({ todoList, children }) => {
 			<ListSubTitle>
 				{children}
 			</ListSubTitle>
+			<p>{todoList}</p>
 			<UList>
-				{todoList.map((id, name) => {
-					<LI key={id} ><Item item={name} >Item {counter++}</Item></LI>
+				{todoList.map((id, item) => {
+					<LI key={id} ><Item item={item} >Item</Item></LI>
 				})}
 			</UList>
 		</>

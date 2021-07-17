@@ -11,12 +11,21 @@ import { List } from '../../containers';
 
 export const MusicList  = () => {
 	const [ input, setInput ] = useState();
+	const [ todoList, setTodoList ] = useState([]);
 	
-	function add() {
+	
+	function onClick() {
 		console.log('button was clicked');
+		setTodoList(todoList => todoList.concat(input));
+		console.log(todoList);
+		
+		/*CUIDADO com sintaxe para class component*/
+		//const { addTodo } = this.props;
+		//const { input } = this.state;
+		// addTodo(input);
 	}
 	function onChange(e) {
-		// console.log('input was changed', e.target.value);
+		console.log('input was changed', e.target.value);
 		
 		setInput(e.target.value);
 	}
@@ -27,9 +36,9 @@ export const MusicList  = () => {
 		<div>
 			<Nav />
 			<ListTitle>Music List App</ListTitle>
-			<List todoList={[]} >Testa lista</List>
+			<List todoList={todoList} >Testa lista</List>
 			<Input onChange={(e) => onChange(e)} value={input} />
-			<Button onClick={add} >Add</Button>
+			<Button onClick={onClick} >Add</Button>
 			
 			<Card />
 			<Footer />

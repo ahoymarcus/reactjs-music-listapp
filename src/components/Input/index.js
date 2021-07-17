@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 
 
 
@@ -5,8 +6,12 @@ export const Input = ({ onChange, value }) => {
 	
 	
 	return (
-		<input type="text" onChange={onChange} value={value} />
+		<GenericInput type="text" onChange={onChange} value={value} />
 	);
 };
+
+const GenericInput = styled.input`
+	margin-left: 10px;
+`;
 
 
