@@ -16,9 +16,19 @@ export const Button = ( {children, onClick} ) => {
 };
 
 const GenericButton = styled.button`
-	margin-left: 10px;
-	padding: 5px;
-	margin-bottom: 10px;
+	background: #dc872cad; /*#dc872c;*/
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	font-family: 'New Tegomin', serif;
+	cursor: pointer;
+	box-shadow: #333 3px 3px;
+	
+	&:hover {
+		background: #5f2424ad;
+	}
 `;
 
 
