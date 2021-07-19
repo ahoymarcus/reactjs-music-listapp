@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 const Quote = styled.p`
 	font-size: 2em;
-	margin: 0;
+	margin: 20px 0 5px;
 `;
 
 const Speaker = styled(Quote)`
