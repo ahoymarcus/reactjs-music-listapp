@@ -1,9 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
-import { connect } from 'react-redux';
-import { addTodo } from '../../store/actions/todo';
-
 import { Nav, Footer, Input, Button, Card, Quotes } from '../../components';
 import { List } from '../../containers';
 
@@ -47,7 +44,7 @@ export const MusicList  = () => {
 		};
 	}, [quoteState]);
 	
-	const onUpdate = async () => {
+	const updateQuotes = async () => {
 		console.log('teste update');
 		audio.play();
 		setQuoteState('novo estado...');
@@ -66,12 +63,8 @@ export const MusicList  = () => {
 	function onClick() {
 		console.log('button was clicked');
 		setTodoList(todoList => todoList.concat(input));
-		console.log(todoList);
+		console.log('todoList type: ' + typeof todoList);
 		
-		/*CUIDADO com sintaxe para class component*/
-		//const { addTodo } = this.props;
-		//const { input } = this.state;
-		// addTodo(input);
 	}
 	function onChange(e) {
 		console.log('input was changed', e.target.value);
@@ -83,15 +76,15 @@ export const MusicList  = () => {
 	
 	return (
 		<Container>
+			<List todoList={todoList} >Music List</List>
+			<Input value={input} onChange={onChange} />
+			<Button onClick={onClick} >Add</Button>
 			<Content>
-				
 				<Quotes 
 					{...quoteState}
-					onUpdate={onUpdate} 
-				/>
-				
+					onUpdate={updateQuotes} 
+				/>	
 				<RecordImg src={recordPlayerImg} alt="Imagem de uma vitrola" />
-				
 			</Content>
 		</Container>
 	);
@@ -131,14 +124,5 @@ const ListTitle = styled.h1`
 `;
 
 
-/*CUIDADO para class components*/
-// const mapStateToProps = input => ({
-	// listTodo: input.todo
-// };)
-
-// export default connect(
-	// mapStateToProps, 
-	// { addTodo }
-// )(MusicList);
 
 

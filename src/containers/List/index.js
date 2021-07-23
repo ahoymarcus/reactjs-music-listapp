@@ -27,7 +27,10 @@ export const List = ({ todoList, children }) => {
 };
 
 const ListSubTitle = styled.h2`
+	font-size: 3em;
 	margin-bottom: 25px; 
+	padding-top: 20px;
+	
 	text-align: center;
 `;
 const UList = styled.ul`
