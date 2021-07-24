@@ -23,7 +23,7 @@ export const MusicList  = () => {
 	//console.log("mounted: " + mounted);
 	
 	const [ quoteState, setQuoteState ] = useState({ quote: 'Loading quote...', speaker: 'Loading author...' });
-	const [ input, setInput ] = useState();
+	const [ input, setInput ] = useState('');
 	const [ todoList, setTodoList ] = useState([]);
 	
 	
@@ -64,7 +64,7 @@ export const MusicList  = () => {
 		console.log('button was clicked');
 		setTodoList(todoList => todoList.concat(input));
 		console.log('todoList type: ' + typeof todoList);
-		
+		setInput('');
 	}
 	function onChange(e) {
 		console.log('input was changed', e.target.value);
@@ -77,8 +77,11 @@ export const MusicList  = () => {
 	return (
 		<Container>
 			<List todoList={todoList} >Music List</List>
-			<Input value={input} onChange={onChange} />
-			<Button onClick={onClick} >Add</Button>
+			<ContentFlexColumn>
+				<Input value={input} onChange={onChange} />
+				<br />
+				<Button onClick={onClick} >Add</Button>
+			</ContentFlexColumn>
 			<Content>
 				<Quotes 
 					{...quoteState}
@@ -98,6 +101,16 @@ const Container = styled.div`
 	padding: 0;
 	margin: 0;
 	font-family: 'New Tegomin', serif;
+`;
+
+const ContentFlexColumn = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	max-width: 400px;
+	position: relative;
+	top: 60px;
 `;
 
 const Content = styled.div`

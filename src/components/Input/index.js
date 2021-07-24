@@ -12,6 +12,8 @@ export const Input = ({ onChange, value }) => {
 
 const GenericInput = styled.input`
 	margin-left: 10px;
+	padding: 5px;
+	border-radius: 6px;
 `;
 
 

@@ -25,6 +25,7 @@ const GenericButton = styled.button`
 	font-family: 'New Tegomin', serif;
 	cursor: pointer;
 	box-shadow: #333 3px 3px;
+	max-width: 150px;
 	
 	&:hover {
 		background: #5f2424ad;

@@ -1,16 +1,21 @@
+import styled from 'styled-components';
+
 export const Item = ( {children, item} ) => {
 	
 	
 	return (
 		<>
-			<a href="/" className="item-lista">
+			<A href="/" className="item-lista">
 				{children} 
-			</a> 
-			- {item}
+			</A> 
+			{item}
 		</>
 	);
 };
 
-
+const A = styled.a`
+	color: #f1e7e6;
+	text-decoration: none;
+`;
 
 
