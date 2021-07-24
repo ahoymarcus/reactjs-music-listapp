@@ -7,12 +7,16 @@ Projeto de desenvolvimento front-end para construir uma aplicação que possui s
 Dependências:
 
 - Styled-components
-- Redux e React-redux
-
 
 
 ### Resultado Final do projeto :
-![imagem final do projeto](./src/assets/imagem-final-do-projeto.png)
+![imagem final do projeto](./src/assets/images/imagem-final-do-projeto3.png)
+
+### Resultado Final do projeto :
+![imagem final do projeto](./src/assets/images/imagem-final-do-projeto1.png)
+
+### Resultado Final do projeto :
+![imagem final do projeto](./src/assets/images/imagem-final-do-projeto2.png)
 
 
 

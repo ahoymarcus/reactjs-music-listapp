@@ -47,7 +47,7 @@ export const MusicList  = () => {
 	const updateQuotes = async () => {
 		console.log('teste update');
 		audio.play();
-		setQuoteState('novo estado...');
+		setQuoteState({ quote: 'Em implementação. Obrigado pela visita!!! :-)', speaker: 'Marcus'});
 		
 		
 		/*
@@ -79,16 +79,16 @@ export const MusicList  = () => {
 			<List todoList={todoList} >Music List</List>
 			<ContentFlexColumn>
 				<Input value={input} onChange={onChange} />
-				<br />
+				
 				<Button onClick={onClick} >Add</Button>
 			</ContentFlexColumn>
-			<Content>
+			<ContentFlexRow>
 				<Quotes 
 					{...quoteState}
 					onUpdate={updateQuotes} 
 				/>	
 				<RecordImg src={recordPlayerImg} alt="Imagem de uma vitrola" />
-			</Content>
+			</ContentFlexRow>
 		</Container>
 	);
 };
@@ -113,7 +113,7 @@ const ContentFlexColumn = styled.div`
 	top: 60px;
 `;
 
-const Content = styled.div`
+const ContentFlexRow = styled.div`
 	height: 100vh;
 	padding: 0 50px;
 	display: flex;
