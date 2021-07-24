@@ -1,7 +1,7 @@
-# Como gerenciar o estado das aplicações com Redux
+# Criando um front-end totalmente componentizado na prática com ReactJS
 
 
-Projeto de desenvolvimento front-end para construir uma aplicação que possui seu estado gerenciado pela biblioteca Redux JS. [^1]
+Projeto de desenvolvimento front-end com React-JS para construir uma aplicação de lista de música que trabalha de maneira componentizada para realizar as diversas tarefas implementadas pela Lista. [^1]
 
 
 Dependências:
@@ -22,5 +22,5 @@ Dependências:
 
 
 
-[^1] Orientado pelo professor Paulo Rezende(Software engineer) da Digital Innovation One. Trilha de Frontend.
+[^1] Orientado pelos projetos dos professores Celso Henrique, Nathally Souza e Paulo Rezende da Digital Innovation One. Trilha de Frontend.
 
