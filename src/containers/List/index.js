@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-import { connet } from 'react-redux';
-
-
-
 // A busca do arquivo index.js é automática
 import { Item } from '../../components';
 
