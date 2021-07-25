@@ -14,11 +14,11 @@ const audio = new Audio(rocketSound);
 
 export const MusicList  = () => {
 	// O hook useRef() permite atualizar estados mesmo com componentes já desmontados
-	const isMounted = useRef(true);
-	console.log("mounted: ");
-	console.log(isMounted);
+	//const isMounted = useRef(true);
+	//console.log("mounted: ");
+	//console.log(isMounted);
 	
-	// Variável para teste
+	// Variável só para teste
 	//let mounted = true;
 	//console.log("mounted: " + mounted);
 	
@@ -34,7 +34,7 @@ export const MusicList  = () => {
 		console.log('quoteState foi alterado');
 		// Veja que este valor abaixo nunca é utilizado!!!
 		
-		isMounted.current = false;
+		//isMounted.current = false;
 		//mounted = false;
 		
 		//onUpdate();
@@ -47,17 +47,17 @@ export const MusicList  = () => {
 	const updateQuotes = async () => {
 		console.log('teste update');
 		audio.play();
-		setQuoteState({ quote: 'Em implementação. Obrigado pela visita!!! :-)', speaker: 'Marcus'});
+		setQuoteState({ quote: 'Em implementação. Obrigado pela visita. Volte sempre!!! :-)', speaker: 'Marcus'});
 		
 		
 		/*
 			Abaixo temos uma validação para evitar tentativas de setar o estado quando de um retorno assíncrono de API que encontre o componente já desmontado!!!!!!
 		*/
 		// const quote = await getQuote();
-		if (isMounted.current) {
+		//if (isMounted.current) {
 			//audio.play();
 			// setQuoteState(quote);
-		}
+		//}
 	};
 		
 	function onClick() {
@@ -135,7 +135,4 @@ const ListTitle = styled.h1`
 	margin-bottom: 30px;
 	text-align: center;
 `;
-
-
-
 
